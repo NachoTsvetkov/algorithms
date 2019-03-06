@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RansomNote", "RansomNote\Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoStrings", "TwoStrings\TwoStrings.csproj", "{69090B69-E053-4194-9C5A-3624B2713724}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays", "Arrays", "{71A59855-CC5A-4CE7-A6B9-57543ADF390B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftRotation", "LeftRotation\LeftRotation.csproj", "{C3729B92-5DEC-4044-B203-19E9BD3B4990}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{69090B69-E053-4194-9C5A-3624B2713724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69090B69-E053-4194-9C5A-3624B2713724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69090B69-E053-4194-9C5A-3624B2713724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,7 @@ Global
 		{662B56D7-94E3-4F24-8B0D-02BABBCE6F2B} = {05343796-9FC5-434F-ABC9-25D1EFFB7052}
 		{39BB4C24-847A-4B0B-96BE-8D1959D8697C} = {0EC41F47-4B6F-470C-825F-65285DEA1B01}
 		{69090B69-E053-4194-9C5A-3624B2713724} = {0EC41F47-4B6F-470C-825F-65285DEA1B01}
+		{C3729B92-5DEC-4044-B203-19E9BD3B4990} = {71A59855-CC5A-4CE7-A6B9-57543ADF390B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.28516.95
+VisualStudioVersion = 16.0.28701.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SockMerchent", "SockMerchent\SockMerchent.csproj", "{60602068-4B4C-43B3-BFEF-3E240FF2800C}"
 EndProject
@@ -15,17 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WarmUp", "WarmUp", "{EC2294
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graphs", "Graphs", "{05343796-9FC5-434F-ABC9-25D1EFFB7052}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadsAndLibraries", "RoadsAndLibraries\RoadsAndLibraries.csproj", "{662B56D7-94E3-4F24-8B0D-02BABBCE6F2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadsAndLibraries", "RoadsAndLibraries\RoadsAndLibraries.csproj", "{662B56D7-94E3-4F24-8B0D-02BABBCE6F2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DictionariesAndHashMaps", "DictionariesAndHashMaps", "{0EC41F47-4B6F-470C-825F-65285DEA1B01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RansomNote", "RansomNote\RansomNote.csproj", "{39BB4C24-847A-4B0B-96BE-8D1959D8697C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RansomNote", "RansomNote\RansomNote.csproj", "{39BB4C24-847A-4B0B-96BE-8D1959D8697C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoStrings", "TwoStrings\TwoStrings.csproj", "{69090B69-E053-4194-9C5A-3624B2713724}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoStrings", "TwoStrings\TwoStrings.csproj", "{69090B69-E053-4194-9C5A-3624B2713724}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays", "Arrays", "{71A59855-CC5A-4CE7-A6B9-57543ADF390B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftRotation", "LeftRotation\LeftRotation.csproj", "{C3729B92-5DEC-4044-B203-19E9BD3B4990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeftRotation", "LeftRotation\LeftRotation.csproj", "{C3729B92-5DEC-4044-B203-19E9BD3B4990}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndAnagrams", "SherlockAndAnagrams\SherlockAndAnagrams.csproj", "{6AD28473-EADD-4DC2-A1A5-63643B61346D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVeryBigSum", "AVeryBigSum\AVeryBigSum.csproj", "{A32E9D15-593E-4DB4-A48A-3B7D6687469F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3729B92-5DEC-4044-B203-19E9BD3B4990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD28473-EADD-4DC2-A1A5-63643B61346D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD28473-EADD-4DC2-A1A5-63643B61346D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD28473-EADD-4DC2-A1A5-63643B61346D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD28473-EADD-4DC2-A1A5-63643B61346D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +90,8 @@ Global
 		{39BB4C24-847A-4B0B-96BE-8D1959D8697C} = {0EC41F47-4B6F-470C-825F-65285DEA1B01}
 		{69090B69-E053-4194-9C5A-3624B2713724} = {0EC41F47-4B6F-470C-825F-65285DEA1B01}
 		{C3729B92-5DEC-4044-B203-19E9BD3B4990} = {71A59855-CC5A-4CE7-A6B9-57543ADF390B}
+		{6AD28473-EADD-4DC2-A1A5-63643B61346D} = {0EC41F47-4B6F-470C-825F-65285DEA1B01}
+		{A32E9D15-593E-4DB4-A48A-3B7D6687469F} = {EC2294FA-F495-46FF-A314-B8396EE9D3A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

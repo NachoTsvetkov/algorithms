@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{D2EA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakingAnagrams", "MakingAnagrams\MakingAnagrams.csproj", "{901E7C85-C319-4E20-A412-A198501C6C0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlternatingChars", "AlternatingChars\AlternatingChars.csproj", "{105620AA-EFAE-4382-B1D5-89CBBDD02962}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{901E7C85-C319-4E20-A412-A198501C6C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{901E7C85-C319-4E20-A412-A198501C6C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{901E7C85-C319-4E20-A412-A198501C6C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105620AA-EFAE-4382-B1D5-89CBBDD02962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105620AA-EFAE-4382-B1D5-89CBBDD02962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105620AA-EFAE-4382-B1D5-89CBBDD02962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105620AA-EFAE-4382-B1D5-89CBBDD02962}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{6D92DB82-0186-4CB1-8736-C94897C4E67C} = {71A59855-CC5A-4CE7-A6B9-57543ADF390B}
 		{500CBFD2-678B-4C0F-B921-7245CC051476} = {C5A71485-64CF-497C-A7E6-9656537B54C6}
 		{901E7C85-C319-4E20-A412-A198501C6C0B} = {D2EA16DC-AFA5-444C-A2C6-F7A681D96AA7}
+		{105620AA-EFAE-4382-B1D5-89CBBDD02962} = {D2EA16DC-AFA5-444C-A2C6-F7A681D96AA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

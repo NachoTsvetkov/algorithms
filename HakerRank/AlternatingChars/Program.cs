@@ -2,7 +2,6 @@
 
 class Solution
 {
-
     // Complete the alternatingCharacters function below.
     static int AlternatingCharacters(string s)
     {

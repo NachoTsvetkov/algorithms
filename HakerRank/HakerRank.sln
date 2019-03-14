@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeftRotation", "LeftRotatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndAnagrams", "SherlockAndAnagrams\SherlockAndAnagrams.csproj", "{6AD28473-EADD-4DC2-A1A5-63643B61346D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVeryBigSum", "AVeryBigSum\AVeryBigSum.csproj", "{A32E9D15-593E-4DB4-A48A-3B7D6687469F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVeryBigSum", "AVeryBigSum\AVeryBigSum.csproj", "{A32E9D15-593E-4DB4-A48A-3B7D6687469F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinSwaps", "MinSwaps\MinSwaps.csproj", "{6D92DB82-0186-4CB1-8736-C94897C4E67C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A32E9D15-593E-4DB4-A48A-3B7D6687469F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D92DB82-0186-4CB1-8736-C94897C4E67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D92DB82-0186-4CB1-8736-C94897C4E67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D92DB82-0186-4CB1-8736-C94897C4E67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D92DB82-0186-4CB1-8736-C94897C4E67C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{C3729B92-5DEC-4044-B203-19E9BD3B4990} = {71A59855-CC5A-4CE7-A6B9-57543ADF390B}
 		{6AD28473-EADD-4DC2-A1A5-63643B61346D} = {0EC41F47-4B6F-470C-825F-65285DEA1B01}
 		{A32E9D15-593E-4DB4-A48A-3B7D6687469F} = {EC2294FA-F495-46FF-A314-B8396EE9D3A4}
+		{6D92DB82-0186-4CB1-8736-C94897C4E67C} = {71A59855-CC5A-4CE7-A6B9-57543ADF390B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

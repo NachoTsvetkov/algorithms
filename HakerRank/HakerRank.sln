@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Greedy", "Greedy", "{500719
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinAbsDiff", "MinAbsDif\MinAbsDiff.csproj", "{61A968F8-612C-4F34-B86E-B66D96716F92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckBalance", "LuckBalance\LuckBalance.csproj", "{4479FCD0-6626-4166-8418-D84CEAA27074}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{61A968F8-612C-4F34-B86E-B66D96716F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61A968F8-612C-4F34-B86E-B66D96716F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61A968F8-612C-4F34-B86E-B66D96716F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4479FCD0-6626-4166-8418-D84CEAA27074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4479FCD0-6626-4166-8418-D84CEAA27074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4479FCD0-6626-4166-8418-D84CEAA27074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4479FCD0-6626-4166-8418-D84CEAA27074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{105620AA-EFAE-4382-B1D5-89CBBDD02962} = {D2EA16DC-AFA5-444C-A2C6-F7A681D96AA7}
 		{B52B1510-9DE2-4E05-BB90-4197B3B83F77} = {D2EA16DC-AFA5-444C-A2C6-F7A681D96AA7}
 		{61A968F8-612C-4F34-B86E-B66D96716F92} = {500719A3-C30F-4386-9E40-BAAD00ACF366}
+		{4479FCD0-6626-4166-8418-D84CEAA27074} = {500719A3-C30F-4386-9E40-BAAD00ACF366}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

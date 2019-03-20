@@ -1,74 +1,95 @@
-﻿using System.IO;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Numerics;
 
 class Solution
 {
-    // Complete the roadsAndLibraries function below.
-    static long RoadsAndLibraries(int numberOfCities, int libCost, int roadCost, int[][] roads)
+    class City
     {
-        if (roadCost > libCost)
+        public City()
         {
-            return libCost * numberOfCities;
+            this.NeighboursIndexes = new List<int>();
         }
 
-        var roadLength = libCost / roadCost;
+        public List<int> NeighboursIndexes { get; }
 
-        var accessToLibrary = new bool[numberOfCities];
+        public bool HasBeenVisited { get; set; }
+    }
 
-        var cost = 0L;
-        for (int cityIndex = 0; cityIndex < numberOfCities; cityIndex++)
+    // Complete the roadsAndLibraries function below.
+    static BigInteger RoadsAndLibraries(int numberOfCities, BigInteger costLib, BigInteger costRoad, int[][] roads)
+    {
+        if (costRoad > costLib)
         {
-            if (accessToLibrary[cityIndex] == true)
+            return costLib * numberOfCities;
+        }
+
+        var cities = GetCities(numberOfCities, roads);
+
+        BigInteger cost = 0;
+
+        for (int i = 0; i < cities.Length; i++)
+        {
+            var city = cities[i];
+            if (city.HasBeenVisited)
             {
                 continue;
             }
 
-            accessToLibrary[cityIndex] = true;
-            var numberOfRoads = BuildRoads(cityIndex, roadLength, accessToLibrary, roads);
-            cost += libCost + numberOfRoads * roadCost;
+            var clusterSize = GetClusterSize(i, cities);
+            cost += (clusterSize - 1) * costRoad + costLib;
         }
 
         return cost;
     }
 
-    private static int BuildRoads(int cityIndex, int roadLength, bool[] accessToLibrary, int[][] roads)
+    private static BigInteger GetClusterSize(int i, City[] cities)
     {
-        var cityName = cityIndex + 1;
-        var roadCount = 0;
+        var clusterSize = 0;
+        var stack = new Stack<City>();
 
-        for (int i = 0; i < roads.Length; i++)
+        stack.Push(cities[i]);
+        cities[i].HasBeenVisited = true;
+
+        while (stack.Count > 0)
         {
-            var adjasentCityIndex = -1;
+            var city = stack.Pop();
+            clusterSize++;
 
-            if (roads[i][0] == cityName)
+            foreach (var neighbourIndex in city.NeighboursIndexes)
             {
-                adjasentCityIndex = roads[i][1] - 1;
-            }
+                var neighbour = cities[neighbourIndex];
 
-            if (roads[i][1] == cityName)
-            {
-                adjasentCityIndex = roads[i][0] - 1;
-            }
-
-            if (adjasentCityIndex == -1)
-            {
-                continue;
-            }
-
-            if (!accessToLibrary[adjasentCityIndex])
-            {
-                accessToLibrary[adjasentCityIndex] = true;
-                roadCount += 1;
-                if (roadLength > 1)
+                if (!neighbour.HasBeenVisited)
                 {
-                    roadCount += BuildRoads(adjasentCityIndex, roadLength - 1, accessToLibrary, roads);
+                    stack.Push(neighbour);
+                    neighbour.HasBeenVisited = true;
                 }
             }
         }
 
-        return roadCount;
+        return clusterSize;
+    }
+
+    private static City[] GetCities(int numberOfCities, int[][] roads)
+    {
+        var cities = new City[numberOfCities];
+
+        for (int i = 0; i < numberOfCities; i++)
+        {
+            cities[i] = new City(); 
+        }
+
+        foreach (var road in roads)
+        {
+            var firstCity = road[0] - 1;
+            var secondCity = road[1] - 1;
+
+            cities[firstCity].NeighboursIndexes.Add(secondCity);
+            cities[secondCity].NeighboursIndexes.Add(firstCity);
+        }
+
+        return cities;
     }
 
     static void Main(string[] args)
@@ -94,10 +115,9 @@ class Solution
                 cities[i] = Array.ConvertAll(Console.ReadLine().Split(' '), citiesTemp => Convert.ToInt32(citiesTemp));
             }
 
-            long result = RoadsAndLibraries(n, c_lib, c_road, cities);
+            BigInteger result = RoadsAndLibraries(n, c_lib, c_road, cities);
 
             Console.WriteLine(result);
         }
-
     }
 }

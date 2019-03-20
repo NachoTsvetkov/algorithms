@@ -10,8 +10,8 @@ class Solution
         var totalLuck = 0;
         var lostImportant = 0;
 
-        var comparer = new Comparison<int[]>((x, y) => y[0] - x[0]);
-        Array.Sort(contests, comparer);
+        var sortDescendingComparer = new Comparison<int[]>((x, y) => y[0] - x[0]);
+        Array.Sort(contests, sortDescendingComparer);
 
         for (int i = 0; i < contests.Length; i++)
         {

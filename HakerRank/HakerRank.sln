@@ -47,11 +47,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndTheValidString",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Greedy", "Greedy", "{500719A3-C30F-4386-9E40-BAAD00ACF366}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinAbsDiff", "MinAbsDif\MinAbsDiff.csproj", "{61A968F8-612C-4F34-B86E-B66D96716F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinAbsDiff", "MinAbsDif\MinAbsDiff.csproj", "{61A968F8-612C-4F34-B86E-B66D96716F92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckBalance", "LuckBalance\LuckBalance.csproj", "{4479FCD0-6626-4166-8418-D84CEAA27074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuckBalance", "LuckBalance\LuckBalance.csproj", "{4479FCD0-6626-4166-8418-D84CEAA27074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreedyFlorist", "TheGreedyFlorist\TheGreedyFlorist.csproj", "{0AC25EAB-19B5-4690-9E16-E898A3569371}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGreedyFlorist", "TheGreedyFlorist\TheGreedyFlorist.csproj", "{0AC25EAB-19B5-4690-9E16-E898A3569371}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{AEF79A13-E4C2-4ACD-9151-FE3AE50CF53B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCreamParlor", "IceCreamParlor\IceCreamParlor.csproj", "{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,10 @@ Global
 		{0AC25EAB-19B5-4690-9E16-E898A3569371}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AC25EAB-19B5-4690-9E16-E898A3569371}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AC25EAB-19B5-4690-9E16-E898A3569371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +162,7 @@ Global
 		{61A968F8-612C-4F34-B86E-B66D96716F92} = {500719A3-C30F-4386-9E40-BAAD00ACF366}
 		{4479FCD0-6626-4166-8418-D84CEAA27074} = {500719A3-C30F-4386-9E40-BAAD00ACF366}
 		{0AC25EAB-19B5-4690-9E16-E898A3569371} = {500719A3-C30F-4386-9E40-BAAD00ACF366}
+		{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB} = {AEF79A13-E4C2-4ACD-9151-FE3AE50CF53B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

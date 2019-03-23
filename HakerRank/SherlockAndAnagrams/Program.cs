@@ -7,29 +7,57 @@ class Solution
 {
 
     // Complete the sherlockAndAnagrams function below.
-    static int sherlockAndAnagrams(string s)
+    static int sherlockAndAnagrams(string input)
     {
-        var substrings = new List<string>();
-        for (int i = 0; i < s.Length; i++)
+        var substringDataList = new List<Dictionary<char, int>>();
+        for (int i = 0; i < input.Length; i++)
         {
-            for (int j = 1; j <= s.Length - i; j++)
+            for (int j = 1; j <= input.Length - i; j++)
             {
-                substrings.Add(s.Substring(i, j));
+                var substringArray = input.Substring(i, j).ToCharArray();
+                var substringData = new Dictionary<char, int>();
+                foreach (var character in substringArray)
+                {
+                    if (substringData.ContainsKey(character))
+                    {
+                        substringData[character]++;
+                    }
+                    else
+                    {
+                        substringData.Add(character, 1);
+                    }
+                }
+                substringDataList.Add(substringData);
             }
         }
 
         var anagramCount = 0;
-        for (int i = 0; i < substrings.Count - 1; i++)
-        {
-            var charrAray = substrings[i].ToCharArray();
-            Array.Reverse(charrAray);
-            var anagram = new string(charrAray);
 
-            for (int j = i + 1; j < substrings.Count; j++)
+        for (int i = 0; i < substringDataList.Count; i++)
+        {
+            var firstData = substringDataList[i];
+            for (int j = i + 1; j < substringDataList.Count; j++)
             {
-                if (substrings[j] == anagram)
+                var secondData = substringDataList[j];
+
+                if (firstData.Count == secondData.Count)
                 {
-                    anagramCount++;
+                    var areAnagrams = true;
+                    foreach (var characterData in firstData)
+                    {
+                        var containsSameChars = secondData.ContainsKey(characterData.Key)
+                            && secondData[characterData.Key] == firstData[characterData.Key];
+                        if (!containsSameChars)
+                        {
+                            areAnagrams = false;
+                            break;
+                        }
+                    }
+
+                    if (areAnagrams)
+                    {
+                        anagramCount++;
+                    }
                 }
             }
         }

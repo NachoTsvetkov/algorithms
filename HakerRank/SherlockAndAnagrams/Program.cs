@@ -5,64 +5,93 @@ using System.Linq;
 
 class Solution
 {
-
-    // Complete the sherlockAndAnagrams function below.
-    static int sherlockAndAnagrams(string input)
+    public class SubstringData
     {
-        var substringDataList = new List<Dictionary<char, int>>();
-        for (int i = 0; i < input.Length; i++)
+        public Dictionary<char, int> Data { get; set; }
+
+        public int WordLength { get; set; }
+
+        public SubstringData()
         {
-            for (int j = 1; j <= input.Length - i; j++)
+
+        }
+
+        public SubstringData(string substring)
+        {
+            var substringArray = substring.ToCharArray();
+
+            this.Data = new Dictionary<char, int>();
+            this.WordLength = substringArray.Length;
+
+            foreach (var character in substringArray)
             {
-                var substringArray = input.Substring(i, j).ToCharArray();
-                var substringData = new Dictionary<char, int>();
-                foreach (var character in substringArray)
+                if (this.Data.ContainsKey(character))
                 {
-                    if (substringData.ContainsKey(character))
-                    {
-                        substringData[character]++;
-                    }
-                    else
-                    {
-                        substringData.Add(character, 1);
-                    }
+                    this.Data[character]++;
                 }
+                else
+                {
+                    this.Data.Add(character, 1);
+                }
+            }
+        }
+    }
+    // Complete the sherlockAndAnagrams function below.
+    static int SherlockAndAnagrams(string input)
+    {
+        var substringDataList = new List<SubstringData>();
+        for (int j = 1; j < input.Length; j++)
+        {
+            for (int i = 0; i <= input.Length - j; i++)
+            {
+                var substring = input.Substring(i, j);
+                var substringData = new SubstringData(substring);
                 substringDataList.Add(substringData);
             }
         }
 
         var anagramCount = 0;
 
-        for (int i = 0; i < substringDataList.Count; i++)
+        for (int i = 0; i < substringDataList.Count - 1; i++)
         {
             var firstData = substringDataList[i];
-            for (int j = i + 1; j < substringDataList.Count; j++)
+            for (int j = i + 1; j < substringDataList.Count && substringDataList[j].WordLength == firstData.WordLength; j++)
             {
                 var secondData = substringDataList[j];
+                var areAnagrams = CheckForAnagram(anagramCount, firstData.Data, secondData.Data);
 
-                if (firstData.Count == secondData.Count)
+                if (areAnagrams)
                 {
-                    var areAnagrams = true;
-                    foreach (var characterData in firstData)
-                    {
-                        var containsSameChars = secondData.ContainsKey(characterData.Key)
-                            && secondData[characterData.Key] == firstData[characterData.Key];
-                        if (!containsSameChars)
-                        {
-                            areAnagrams = false;
-                            break;
-                        }
-                    }
-
-                    if (areAnagrams)
-                    {
-                        anagramCount++;
-                    }
+                    anagramCount++;
                 }
             }
         }
 
         return anagramCount;
+    }
+
+    private static bool CheckForAnagram(int anagramCount, Dictionary<char, int> firstData, Dictionary<char, int> secondData)
+    {
+        var areAnagrams = true;
+        if (firstData.Count == secondData.Count)
+        {
+            foreach (var characterData in firstData)
+            {
+                var containsSameChars = secondData.ContainsKey(characterData.Key)
+                    && secondData[characterData.Key] == firstData[characterData.Key];
+                if (!containsSameChars)
+                {
+                    areAnagrams = false;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            areAnagrams = false;
+        }
+
+        return areAnagrams;
     }
 
     static void Main(string[] args)
@@ -73,7 +102,7 @@ class Solution
         {
             string s = Console.ReadLine();
 
-            int result = sherlockAndAnagrams(s);
+            int result = SherlockAndAnagrams(s);
 
             Console.WriteLine(result);
         }

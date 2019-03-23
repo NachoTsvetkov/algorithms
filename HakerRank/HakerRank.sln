@@ -61,6 +61,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trees", "Trees", "{54D2CC84
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapNodes", "SwapNodes\SwapNodes.csproj", "{7C53E665-B78D-41BF-B623-97A6771961D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.csproj", "{D5841427-9C57-4931-85A4-1BD22FD953DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{7C53E665-B78D-41BF-B623-97A6771961D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C53E665-B78D-41BF-B623-97A6771961D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C53E665-B78D-41BF-B623-97A6771961D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5841427-9C57-4931-85A4-1BD22FD953DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5841427-9C57-4931-85A4-1BD22FD953DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5841427-9C57-4931-85A4-1BD22FD953DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5841427-9C57-4931-85A4-1BD22FD953DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +178,7 @@ Global
 		{0AC25EAB-19B5-4690-9E16-E898A3569371} = {500719A3-C30F-4386-9E40-BAAD00ACF366}
 		{CE89538C-6E3E-414F-9DD6-ADCD305EC4CB} = {AEF79A13-E4C2-4ACD-9151-FE3AE50CF53B}
 		{7C53E665-B78D-41BF-B623-97A6771961D6} = {AEF79A13-E4C2-4ACD-9151-FE3AE50CF53B}
+		{D5841427-9C57-4931-85A4-1BD22FD953DD} = {71A59855-CC5A-4CE7-A6B9-57543ADF390B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

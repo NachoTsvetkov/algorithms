@@ -100,5 +100,31 @@ class Solution
 
         return head;
     }
+    static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-    static void Main(string[] args) {
+        int t = Convert.ToInt32(Console.ReadLine());
+
+        for (int tItr = 0; tItr < t; tItr++)
+        {
+            DoublyLinkedList llist = new DoublyLinkedList();
+
+            int llistCount = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < llistCount; i++)
+            {
+                int llistItem = Convert.ToInt32(Console.ReadLine());
+                llist.InsertNode(llistItem);
+            }
+
+            DoublyLinkedListNode llist1 = reverse(llist.head);
+
+            PrintDoublyLinkedList(llist1, " ", textWriter);
+            textWriter.WriteLine();
+        }
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}

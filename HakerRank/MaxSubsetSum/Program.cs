@@ -1,32 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 class Solution
 {
-    static Dictionary<int, int> MaxSubsetSums = new Dictionary<int, int>();
 
     // Complete the maxSubsetSum function below.
-    static int GetMaxSubsetSum(int[] arr, int element = 0)
+    static int GetMaxSubsetSum(int[] arr)
     {
-        var subsetMaxSum = int.MinValue;
-        for (int i = element + 2; i < arr.Length; i++)
+        if (arr.Length == 1)
         {
-            var subsetSum = MaxSubsetSums.ContainsKey(i) ? MaxSubsetSums[i] : GetMaxSubsetSum(arr, i);
-            subsetMaxSum = Math.Max(subsetMaxSum, subsetSum);
+            return arr[0];
         }
-        subsetMaxSum = Math.Max(0, subsetMaxSum);
 
-        var maxSum = arr[element] + subsetMaxSum;
+        if (arr.Length == 2)
+        {
+            return Math.Max(arr[0], arr[1]);
+        }
+
+        var maxSubsetSums = new int[arr.Length];
+        maxSubsetSums[0] = arr[0];
+        maxSubsetSums[1] = arr[1];
+
+        var maxSum = int.MinValue;
+
+        for (int i = 2; i < arr.Length; i++)
+        {
+            var prevSum = maxSubsetSums[i - 2];
+
+            var currentMaxSum = Math.Max(prevSum, prevSum + arr[i]);
+            currentMaxSum = Math.Max(currentMaxSum, arr[i]);
+            currentMaxSum = Math.Max(currentMaxSum, maxSubsetSums[i - 1]);
+
+            maxSubsetSums[i] = currentMaxSum;
+
+            maxSum = Math.Max(currentMaxSum, maxSum);
+        }
+
         return maxSum;
     }
 
     static void Main(string[] args)
     {
-        int n = Convert.ToInt32(Console.ReadLine());
+        using (var stream = File.OpenRead(@".\input03.txt"))
+        using (var reader = new StreamReader(stream))
+        {
+            int n = Convert.ToInt32(reader.ReadLine());
 
-        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
-        int res = Math.Max(GetMaxSubsetSum(arr, 0), GetMaxSubsetSum(arr, 1));
+            var input = reader.ReadLine();
+            var values = input.Split(' ');
+            int[] arr = Array.ConvertAll(values, value => Convert.ToInt32(value));
+            int res = GetMaxSubsetSum(arr);
 
-        Console.WriteLine(res);
+            Console.WriteLine(res);
+        }
     }
 }

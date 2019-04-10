@@ -77,7 +77,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseDouble", "ReverseDou
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicProgramming", "DynamicProgramming", "{12A115A8-3A69-465B-9D9D-272867CBA9E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubsetSum", "MaxSubsetSum\MaxSubsetSum.csproj", "{ED68A137-1D0E-4A8F-889E-C1C689C3BD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSubsetSum", "MaxSubsetSum\MaxSubsetSum.csproj", "{ED68A137-1D0E-4A8F-889E-C1C689C3BD00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheNearestClone", "FindTheNearestClone\FindTheNearestClone.csproj", "{6CB5A037-231D-46BA-AF65-2C00631E6AFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +191,10 @@ Global
 		{ED68A137-1D0E-4A8F-889E-C1C689C3BD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED68A137-1D0E-4A8F-889E-C1C689C3BD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED68A137-1D0E-4A8F-889E-C1C689C3BD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CB5A037-231D-46BA-AF65-2C00631E6AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB5A037-231D-46BA-AF65-2C00631E6AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB5A037-231D-46BA-AF65-2C00631E6AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB5A037-231D-46BA-AF65-2C00631E6AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -220,6 +226,7 @@ Global
 		{E65B17C6-A349-4161-9967-6F6221B97FE5} = {5984F4E2-3D56-4193-96B4-76A06B25EFD4}
 		{C84B6D36-5865-41B8-AF4F-EC21E4AA1ABC} = {5984F4E2-3D56-4193-96B4-76A06B25EFD4}
 		{ED68A137-1D0E-4A8F-889E-C1C689C3BD00} = {12A115A8-3A69-465B-9D9D-272867CBA9E0}
+		{6CB5A037-231D-46BA-AF65-2C00631E6AFF} = {05343796-9FC5-434F-ABC9-25D1EFFB7052}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}

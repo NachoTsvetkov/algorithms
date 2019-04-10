@@ -13,16 +13,16 @@ class Solution
             return arr[0];
         }
 
+        var maxSum = Math.Max(arr[0], arr[1]); 
+
         if (arr.Length == 2)
         {
-            return Math.Max(arr[0], arr[1]);
+            return maxSum;
         }
 
         var maxSubsetSums = new int[arr.Length];
         maxSubsetSums[0] = arr[0];
-        maxSubsetSums[1] = arr[1];
-
-        var maxSum = int.MinValue;
+        maxSubsetSums[1] = maxSum;
 
         for (int i = 2; i < arr.Length; i++)
         {

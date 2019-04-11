@@ -85,6 +85,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecursionAndBacktracking", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{15B88F2A-1CB8-45A0-9FEA-EA45715535B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DavisStaircase", "DavisStaircase\DavisStaircase.csproj", "{4C80577B-AA3A-4C23-8AD8-77B2837AA7E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +205,10 @@ Global
 		{15B88F2A-1CB8-45A0-9FEA-EA45715535B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15B88F2A-1CB8-45A0-9FEA-EA45715535B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15B88F2A-1CB8-45A0-9FEA-EA45715535B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C80577B-AA3A-4C23-8AD8-77B2837AA7E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C80577B-AA3A-4C23-8AD8-77B2837AA7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C80577B-AA3A-4C23-8AD8-77B2837AA7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C80577B-AA3A-4C23-8AD8-77B2837AA7E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -236,6 +242,7 @@ Global
 		{ED68A137-1D0E-4A8F-889E-C1C689C3BD00} = {12A115A8-3A69-465B-9D9D-272867CBA9E0}
 		{6CB5A037-231D-46BA-AF65-2C00631E6AFF} = {05343796-9FC5-434F-ABC9-25D1EFFB7052}
 		{15B88F2A-1CB8-45A0-9FEA-EA45715535B4} = {1C6190D3-BC7A-4350-8B17-153A2963E576}
+		{4C80577B-AA3A-4C23-8AD8-77B2837AA7E9} = {1C6190D3-BC7A-4350-8B17-153A2963E576}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDF5BB10-8338-46E9-A5DC-CADD02B92A55}
